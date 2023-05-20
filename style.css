@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  margin: 18px 0;
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.menu__name {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #957554;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.menu__name:hover {
+  color: black;
+}
+
+.first__section {
+  background-image: url(assets/images/Main\ poto.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 80px;
+}
+
+.first__section-content {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.main__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 92px;
+  color: #ffffff;
+}
+
+.desctiption,
+.button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.button {
+  text-decoration: none;
+  background: #dfaa5b;
+  border-radius: 10px;
+  padding: 25px 133px;
+  transition: all 0.5s;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.second__title {
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 52px;
+  color: #957554;
+  margin-bottom: 47px;
+  margin-top: 80px;
+}
+
+.rooms__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin-bottom: 55px;
+}
+
+.rooms__card {
+  position: relative;
+  width: 630px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rooms__card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards__content {
+  position: absolute;
+  width: 100%;
+  bottom: 57px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.card__title {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 46px;
+  color: #ffffff;
+}
+
+.button.button-small {
+  padding: 24px 52px 24px 56px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 7.48%,
+    #000000 100%
+  );
+}
+
+.third__section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 146px;
+}
+
+.footer {
+  background: #111111;
+}
+
+.footer__img {
+  height: 100%;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 159px;
+  padding-top: 51px;
+}
+
+.menu__footer {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  list-style: none;
+}
+
+.manu__footer-list {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.manu__footer-list:hover,
+.copyright_1:hover,
+.copyright_2:hover {
+  color: #957554;
+  text-decoration: underline;
+}
+
+.copyright__content {
+  display: flex;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.copyright {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.copyright_1,
+.copyright_2 {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/*****page2****/
+
+
+
+.container h2 {
+  margin-bottom: 68px;
+}
+
+.news__list {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: 500px;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.news__list-img,
+.grid__gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.news__list-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 44px;
+}
+
+.news__list-text h3 {
+  color: #957554;
+}
+
+.news__list-text p {
+  color: #000000;
+}
+
+.news__list:nth-child(2n) img {
+  order: 1;
+}
+
+.news__list:nth-child(2n) .news__list-text {
+  align-items: end;
+}
+
+.news__list:nth-child(2n) .news__list-text p {
+  text-align: right;
+}
+
+.news__list:last-child {
+  margin-bottom: 107px;
+}
+
+.grid__gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 500px);
+  gap: 30px;
+  margin-bottom: 104px;
+}
+
+.grid__gallery img:first-child {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid__gallery img:nth-child(2) {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 1;
+}
+
+.grid__gallery img:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.grid__gallery img:nth-child(4) {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.grid__gallery img {
+  transition: all 0.8s;
+}
+
+.grid__gallery img:hover {
+  transform: scale(1.05);
+}
