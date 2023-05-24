@@ -295,7 +295,7 @@ html {
 .grid__gallery {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(3, 500px);
   gap: 30px;
   margin-bottom: 104px;
 }
@@ -327,6 +327,21 @@ html {
   grid-row-start: 2;
   grid-row-end: 2;
 }
+
+.grid__gallery img:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;  
+}
+
+.grid__gallery img:nth-child(5) {
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 3;  
+}
+
 
 .grid__gallery img {
   transition: all 0.8s;
