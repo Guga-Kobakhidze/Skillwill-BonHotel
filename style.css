@@ -268,10 +268,12 @@ html {
 
 .news__list-text h3 {
   color: #957554;
+  font-size: 35px;
 }
 
 .news__list-text p {
-  color: #000000;
+  color: #2422229b;
+  font-size: 28px;
 }
 
 .news__list:nth-child(2n) img {
