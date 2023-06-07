@@ -12,6 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <?php 
+      $rooms_cards_button = "Booking"
+    ?>
   </head>
   <body>
     <header class="header">
@@ -52,7 +55,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Standard Twin Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
             <div class="rooms__card">
@@ -60,7 +63,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Standard Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
             <div class="rooms__card" id="third__section">
@@ -68,7 +71,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Standard View Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
             <div class="rooms__card">
@@ -76,7 +79,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Deluxe Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
             <div class="rooms__card">
@@ -84,7 +87,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Extra Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
             <div class="rooms__card">
@@ -92,7 +95,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">Family Room</h3>
-                <a class="button button-small" href="#">Check Rates</a>
+                <a class="button button-small" href="#"><?php echo $rooms_cards_button ?></a>
               </div>
             </div>
           </div>
