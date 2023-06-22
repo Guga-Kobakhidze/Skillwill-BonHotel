@@ -15,7 +15,7 @@
     <?php require "./variables.php"; ?>
   </head>
   <body>
-    <?php include "header.html" ?>
+    <?php include "header.php" ?>
     <main class="main">
       <section class="first__section" id="first__section">
         <div class="first__section-content">
@@ -36,7 +36,7 @@
               <div class="overlay"></div>
               <div class="cards__content">
                 <h3 class="card__title">' . $card['card__title'][$i] . ' </h3>
-                <a class="button button-small" href="#">Check rates</a>
+                <a class="button button-small" href="#">' . $card['buttons'][$i] . '</a>
               </div>
             </div>';
             $i++;
@@ -54,6 +54,6 @@
         </div>
       </section>
     </main>
-    <?php include "footer.html" ?>
+    <?php include "./footer.php" ?>
   </body>
 </html>

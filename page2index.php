@@ -15,7 +15,7 @@
     <?php require "./variables.php"; ?>
   </head>
   <body>
-    <?php include "header.html" ?>
+    <?php include "header.php" ?>
     <main>
       <section class="First-list" id="First-list">
         <div class="container">
@@ -35,7 +35,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
                 quis urna id arcu mattis por at eros.
                 </p>
-                <a class="button" href="">Check Rates</a>
+                <a class="button" href="">' . $card['buttons'][$i] . '</a>
               </div>
             </div>'; 
            }
@@ -50,12 +50,12 @@
               <?php 
                 foreach ($gridImgs as $gridImg) {
                   echo '<img src="' . $gridImg['img'] . '" alt="forth">';
-                }
+                };
               ?>
             </div>
         </div>
       </section>
     </main>
-    <?php include "footer.html" ?>
+    <?php include "footer.php" ?>
   </body>
 </html>

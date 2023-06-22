@@ -31,7 +31,9 @@ html {
   list-style: none;
 }
 
-.menu__name {
+.menu__name,
+.Subnav a,
+.down-icon {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 24px;
@@ -41,8 +43,43 @@ html {
   transition: all 0.5s;
 }
 
-.menu__name:hover {
+.Subnav a {
+  font-size: 16px;
+}
+
+.menu__name:hover,
+.Subnav a:hover {
   color: black;
+}
+
+.Subnav {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: 0;
+  transition: all 0.5s;
+  background: rgba(162, 161, 161, 0.77);
+}
+
+.menu__name2 {
+  position: relative;
+}
+
+.menu__name2:hover .Subnav {
+  opacity: 1;
+}
+
+.menu__name2:hover .down-icon {
+  transform: rotate(180deg);
+}
+
+.down-icon {
+  cursor: pointer;
 }
 
 .first__section {
@@ -236,8 +273,6 @@ html {
 
 /*****page2****/
 
-
-
 .container h2 {
   margin-bottom: 68px;
 }
@@ -332,16 +367,15 @@ html {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 3;
-  grid-row-end: 3;  
+  grid-row-end: 3;
 }
 
 .grid__gallery img:nth-child(5) {
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 3;
-  grid-row-end: 3;  
+  grid-row-end: 3;
 }
-
 
 .grid__gallery img {
   transition: all 0.8s;
