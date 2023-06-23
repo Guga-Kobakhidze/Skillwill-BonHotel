@@ -28,8 +28,8 @@
           />
           <nav class="navigation__footer">
             <ul class="menu__footer">
-              <?php 
               
+              <?php 
               $i = 0;
               do {
                 echo '<li><a class="manu__footer-list" href=" ' . $footerMenus[$i]['link'] . ' ">
@@ -37,8 +37,8 @@
                 $i++;
               }   
               while ($i < sizeof($footerMenus))
-              
               ?>
+
             </ul>
           </nav>
           <div class="copyright__content">

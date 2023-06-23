@@ -12,18 +12,23 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <?php require "./variables.php"; ?>
+    <?php
+      function title($tite1) {
+      return $tite1;} ?>
   </head>
   <body>
     <?php include "header.php" ?>
     <main>
       <section class="First-list" id="First-list">
         <div class="container">
-          <h2 class="second__title">Rooms & Rates</h2>
+        <h2 class="second__title"><?php
+          $result = title('Rooms & Rates');
+                  echo $result;
+          ?></h2>
           <div class="news_cards">
             <?php 
            for ($i = 0; $i < 6; $i++) {
-          echo  '<div class="news__list">
+                  echo  '<div class="news__list">
               <img
                 class="news__list-img"
                 src="' . $card['imgs'][$i] . '"
@@ -45,12 +50,12 @@
       </section>
       <section class="second-list">
         <div class="container">
-            <h2 class="second__title">Gallery</h2>
+            <h2 class="second__title"><?php 
+            $result = title('Gallery');
+                  echo $result; ?></h2>
             <div class="grid__gallery">
               <?php 
-                foreach ($gridImgs as $gridImg) {
-                  echo '<img src="' . $gridImg['img'] . '" alt="forth">';
-                };
+                callGridImgs();
               ?>
             </div>
         </div>

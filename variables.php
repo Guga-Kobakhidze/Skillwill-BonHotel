@@ -8,26 +8,15 @@ $card = [
     'buttons'  => ["Check Rates", "Check Rates", "Check Rates", "Check Rates", "Check Rates", "Check Rates",]
 ];
 
-$gridImgs = [
-    [
-    'img' => 'assets/images/forth.png'
-    ],
-     [
-    'img' => 'assets/images/Second.png'
-    ],
-     [
-    'img' => 'assets/images/third.png'
-    ],
-     [
-    'img' => 'assets/images/First.png'
-    ],
-     [
-    'img' => 'assets/images/extra room.jpg'
-    ],
-     [
-    'img' => 'assets/images/Family room.jpg'
-    ],
-];
+$gridImgs = ['assets/images/First.png', 'assets/images/Second.png','assets/images/third.png',
+ 'assets/images/forth.png', 'assets/images/extra room.jpg', 'assets/images/Family room.jpg'];
+
+function callGridImgs() {
+global $gridImgs;
+   for ($i = 0; $i < sizeof($gridImgs); $i++) {
+       echo '<img src="' . $gridImgs[$i] . '" alt="Rooms">';
+   }
+};
 
 $menus = [
     [
@@ -48,7 +37,6 @@ $menus = [
                 'name' => 'Hotel Offers'
             ]
         ],
-             
     ],
     [
         'link' => './page2index.php',

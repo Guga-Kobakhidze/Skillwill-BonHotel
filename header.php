@@ -25,6 +25,7 @@
           <img src="assets/images/Logo.svg" alt="" />
           <nav class="navigation">
             <ul class="menu">
+
           <?php 
                 foreach ($menus as $menu) {
                       echo '<li class="menu__name2">
@@ -39,8 +40,9 @@
                 } else {
                       echo "";
                 }     echo '</li>';
-                }
+              }
           ?>
+
             </ul>
           </nav>
         </div>
