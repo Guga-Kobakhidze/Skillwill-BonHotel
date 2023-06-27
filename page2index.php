@@ -17,7 +17,8 @@
       return $tite1;} ?>
   </head>
   <body>
-    <?php include "header.php" ?>
+  <?php require "./variables.php";?>
+    <?php include "header.php"; ?>
     <main>
       <section class="First-list" id="First-list">
         <div class="container">
@@ -26,25 +27,11 @@
                   echo $result;
           ?></h2>
           <div class="news_cards">
+
             <?php 
-           for ($i = 0; $i < 6; $i++) {
-                  echo  '<div class="news__list">
-              <img
-                class="news__list-img"
-                src="' . $card['imgs'][$i] . '"
-                alt="First"
-              />
-              <div class="news__list-text">
-                <h3 class="card__title">' . $card['card__title'][$i] . ' </h3>
-                <p class="card__title">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-                quis urna id arcu mattis por at eros.
-                </p>
-                <a class="button" href="">' . $card['buttons'][$i] . '</a>
-              </div>
-            </div>'; 
-           }
+            cardsForIndex2();
             ?>
+
           </div>
         </div>
       </section>
@@ -54,9 +41,11 @@
             $result = title('Gallery');
                   echo $result; ?></h2>
             <div class="grid__gallery">
+
               <?php 
-                callGridImgs();
+                callGridImgs($gridImgs);
               ?>
+              
             </div>
         </div>
       </section>

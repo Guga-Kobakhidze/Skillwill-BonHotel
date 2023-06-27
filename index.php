@@ -12,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <?php require "./variables.php";?>
+    <?php require "./variables.php" ?>
     <?php include "header.php" ?>
   </head>
   <body>
@@ -22,6 +22,7 @@
       <section class="first__section" id="first__section">
         <div class="first__section-content">
           <h1 class="main__title"><?php
+          $result = title('BON HOTEL');
                 echo $result;
           ?></h1>
           <p class="desctiption">
@@ -44,18 +45,7 @@
           <div class="rooms__gallery">
 
             <?php
-            $i = 0;
-            while ($i < 6) {
-                echo '<div class="rooms__card">
-              <img src="' . $card['imgs'][$i] . '"alt="img-1" />
-              <div class="overlay"></div>
-              <div class="cards__content">
-              <h3 class="card__title">' . $card['card__title'][$i] . ' </h3>
-              <a class="button button-small" href="#">' . $card['buttons'][$i] . '</a>
-              </div>
-              </div>';
-            $i++;
-            } 
+            cardsForIndex($card);
             ?>
             
           </div>

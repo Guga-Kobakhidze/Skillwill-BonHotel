@@ -16,7 +16,6 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-    <?php require "./variables.php"; ?>
   </head>
   <body>
     <header class="header">

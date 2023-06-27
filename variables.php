@@ -8,14 +8,54 @@ $card = [
     'buttons'  => ["Check Rates", "Check Rates", "Check Rates", "Check Rates", "Check Rates", "Check Rates",]
 ];
 
-$gridImgs = ['assets/images/First.png', 'assets/images/Second.png','assets/images/third.png',
- 'assets/images/forth.png', 'assets/images/extra room.jpg', 'assets/images/Family room.jpg'];
+function cardsForIndex($card) {
+    
+    $i = 0;
+    while ($i < 6) {
+        echo '<div class="rooms__card">
+        <img src="' . $card['imgs'][$i] . '"alt="img-1" />
+        <div class="overlay"></div>
+        <div class="cards__content">
+        <h3 class="card__title">' . $card['card__title'][$i] . ' </h3>
+        <a class="button button-small" href="#">' . $card['buttons'][$i] . '</a>
+        </div>
+        </div>';
+    $i++;
+    } 
+    return $card;
+}; 
 
-function callGridImgs() {
-global $gridImgs;
-   for ($i = 0; $i < sizeof($gridImgs); $i++) {
-       echo '<img src="' . $gridImgs[$i] . '" alt="Rooms">';
+function cardsForIndex2() {
+    global $card; 
+    for ($i = 0; $i < 6; $i++) {
+        echo  '<div class="news__list">
+        <img
+        class="news__list-img"
+        src="' . $card['imgs'][$i] . '"
+        alt="First"
+        />
+        <div class="news__list-text">
+        <h3 class="card__title">' . $card['card__title'][$i] . ' </h3>
+        <p class="card__title">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+        quis urna id arcu mattis por at eros.
+        </p>
+        <a class="button" href="">' . $card['buttons'][$i] . '</a>
+        </div>
+        </div>'; 
+    }
+};
+
+$gridImgs = [
+    'assets/images/First.png', 'assets/images/Second.png', 'assets/images/third.png',
+    'assets/images/forth.png', 'assets/images/extra room.jpg', 'assets/images/Family room.jpg'
+];
+
+function callGridImgs($gridImgs) {
+    for ($i = 0; $i < sizeof($gridImgs); $i++) {
+        echo '<img src="' . $gridImgs[$i] . '" alt="Rooms">';
    }
+   return $gridImgs;
 };
 
 $menus = [
